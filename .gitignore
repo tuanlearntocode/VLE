@@ -1,0 +1,7 @@
+test_js_flask/
+.prettierrc
+*.json
+read_data.py
+script.js
+diagram-venv/
+node_modules/
