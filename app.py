@@ -32,7 +32,7 @@ def home_page():
         "R": 0,
         "t_stage": 0,
     }
-    return render_template("index.html", compositions=compositions, **initial_data)
+    return render_template("root.html", compositions=compositions, **initial_data)
 
 
 @app.route("/getdata", methods=["POST"])
@@ -78,7 +78,7 @@ def initial_data():
 
     compositions = get_all_composition(path)
 
-    return render_template("index.html", compositions=compositions, **data)
+    return render_template("root.html", compositions=compositions, **data)
 
 
 @app.route("/about", methods=["GET"])

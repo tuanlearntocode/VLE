@@ -5,3 +5,4 @@ read_data.py
 script.js
 diagram-venv/
 node_modules/
+Distill/__pycache__/
