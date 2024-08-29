@@ -7,7 +7,7 @@
       <div
         class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4"
       >
-        <a href="url_for('home_page')" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <a href="{{url_for('home_page')}}" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img
             src="{{url_for('static', filename='img/flask.png')}}"
             class="h-8"
@@ -78,4 +78,8 @@
     </p>
   </div>
 </main>
+
+<script src="https://cdn.plot.ly/plotly-2.34.0.min.js" charset="utf-8"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 {% endblock %}
