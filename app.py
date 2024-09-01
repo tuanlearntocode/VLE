@@ -86,6 +86,11 @@ def about():
     return render_template("about.html")
 
 
+@app.route("/how_to_use", methods=["GET"])
+def how_to_use():
+    return render_template("tutorial.html")
+
+
 def blank_folder(path):
     try:
         files = os.listdir(path)

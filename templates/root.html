@@ -32,6 +32,9 @@
                 About
                 </a>
               </li>
+              <li>
+                <a href="{{url_for('how_to_use')}}" class="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-blue-500">How to use</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -107,34 +110,34 @@
         x: [0, 1],
         y: [0, 1],
         type: "scatter",
-        name: "Đường chéo góc"
+        name: "quarter line"
       };  
 
       var trace2 = {
         x: {{liquid}},
         y: {{vapor}},
         type: "scatter",
-        name: "Đường cân bằng lỏng hơi"
+        name: "equilibribum line"
       };
 
       var stair = {
         x: {{stair_x}},
         y: {{stair_y}},
         type: "scatter",
-        name: "Đường bậc thang",
+        name: "stairs",
       };
     
       var reci_line = {
         x: [{{ xf }}, {{ xd }}],
         y: [{{ yf }}, {{ xd }}],
         type: "scatter",
-        name: "Đường cất"
+        name: "recitifed line"
       };
       var strip_line = {
         x: [{{ xw }}, {{ xf }}],
         y: [{{ xw }}, {{ yf }}],
         type: "scatter",
-        name: "Đường chưng"
+        name: "stripping line"
       };
     
       var layout = {
